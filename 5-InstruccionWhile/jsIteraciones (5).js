@@ -1,10 +1,31 @@
-function mostrar()
-{
+function mostrar() {
 
-var sexo = prompt("ingrese f ó m .");
+    var sexo = prompt("Ingrese f o m.");
+
+    /*
+    
+    while (!(sexo == "f" || sexo == "m")) {
+        sexo = prompt("Error. Ingrese nuevamente.");
+
+    }
+    
+    document.getElementById('Sexo').value = sexo;
+    
+    */
+
+    while ( sexo != "f" && sexo != "m") {
+        sexo = prompt("Error. Ingrese nuevamente.");
+
+    }
+
+    document.getElementById('Sexo').value = sexo;
 
 
+}
 
-document.getElementById('Sexo').value=sexo;
+/*
+Quiero entrar al while cuando el dato es INVALIDO
 
-}//FIN DE LA FUNCIÓN
+OPCION 01 =    while(Condicion dato invalido)
+OPCION 02 =    while(  !(Condicion dato valido)  )
+*/
