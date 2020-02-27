@@ -1,11 +1,17 @@
-function mostrar()
-{
-//tomo la edad  
-var laHora = document.getElementById('hora').value;
+function mostrar() {
 
-//alert (laHora);
-	
-	
+
+    var laHora;
+    
+    laHora = parseInt(document.getElementById('hora').value);
+
+
+    switch (true) {
+        case (laHora >= 7 && laHora <= 11):
+            alert("Es de Mañana.");
+    }
+
+
 
 
 
